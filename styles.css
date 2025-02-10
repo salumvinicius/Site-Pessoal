@@ -1,0 +1,248 @@
+*{
+    font-family: "Rubik", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 100vh;
+}
+
+nav{
+    background-color: #EDEDED;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    padding: 14px 63px;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px #00000025;
+
+    a{
+        text-decoration: none;
+        color: #3C3C3C;
+    }
+    
+}
+
+#listaNav{
+    display: flex;
+
+    li{
+        padding-left: 73px;
+    }
+}
+
+#home{
+    background-color: #222222;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    #fotoHome{
+        background-image: url(assets/photos/IMG_9579.JPG);
+        width: 40vw;
+        height: 100vh -65px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+       #homeText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60vw;
+        align-items: center;
+        gap: 20px;
+    }
+
+    h1{
+        color: #FFFFFF;
+        font-size: 3.8rem;
+    }
+
+    h2{
+        color: #B6B6B6;
+        font-weight: 400;
+        font-size: 2.4rem;
+        padding-bottom: 40px;
+    }
+    
+}
+
+#sobre{
+    background-color: #FF9E44;
+    display: flex;
+    
+
+    #sobreTextContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+        padding-top: 60px;
+        
+
+        #sobreTextItem{
+            width: 80%;
+        }
+        
+    }
+
+    h1{
+        color: #FFFFFF;
+        font-size: 3.8rem;
+    }
+
+    p{
+        color: #FFFFFF;
+        font-size: 1.8rem;
+        padding: 45px 0 56px 0;
+        line-height: 2.3rem;
+        
+    }
+    
+    #fotoSobre{
+        background-image: url(assets/photos/Imagem\ do\ WhatsApp\ de\ 2025-02-10\ à\(s\)\ 10.46.38_c8fcb8dd.jpg);
+        width: 40vw;
+        height: 100vh -65px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+}
+
+#skills{
+    background-image: url(assets/photos/pexels-goumbik-574073.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    #overlay{
+        height: 100vh;
+        width: 100%;
+        background-color: #FFFFFF70;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1{
+        color: #222222;
+        font-size: 3.8rem;
+        padding-bottom: 50px;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    li{
+        background-color: #00000039;
+        border-radius: 8px;
+        padding: 12px 17px;
+        color: #FFFFFF;
+        font-size: 1.93rem;
+    }
+}
+
+#contato{
+    background-color: #2343E3;
+}
+
+.defaultButton{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 8px 15px;
+    border-radius: 13px;
+    color: #FFFFFF;
+    cursor: pointer;
+    a{
+        padding-left: 10px;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+}
+
+.downloadButton{
+    background-color: #FF9E44;
+}
+
+.linkedinButton{
+    
+    background-color: #FFFFFF30;
+}
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    padding-left: 500px;
+
+   #textoContato{
+    h1{
+        color: #FFFFFF;
+        font-size: 6rem;
+        text-decoration: underline;
+    }
+    
+    p{
+        color: #FFFFFF;
+        font-size: 2.6rem;
+        line-height: 2.3rem;
+        width: 30%;
+        padding-top: 60px;
+    }
+   }
+}
+
+#email{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+    p{
+        color: #FFFFFF;
+        font-size: 2rem;
+    }
+
+    img{
+        width: 32px;
+    }
+}
+
+#telefone{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+    p{
+        color: #FFFFFF;
+        font-size: 2rem;
+    }
+
+    img{
+        width: 32px;
+    }
+}
+
+#botoes{
+    display: flex;
+    padding-top: 40px;
+    gap: 20px;
+    
+    img{
+        width: 64px;
+        height: 64px;
+    }
+}
