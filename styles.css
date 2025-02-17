@@ -1,3 +1,10 @@
+:root{
+    --primary-color: #3C3C3C;
+    --highlight-color: #FF9E44;
+    --secondary-color: #FFFFFF;
+    --darker-background: #2C2C2C;
+}
+
 *{
     font-family: "Rubik", sans-serif;
 }
@@ -7,7 +14,7 @@ html{
 }
 
 section{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 nav{
@@ -22,7 +29,7 @@ nav{
 
     a{
         text-decoration: none;
-        color: #3C3C3C;
+        color: var(--primary-color);
     }
     
 }
@@ -33,10 +40,14 @@ nav{
     li{
         padding-left: 73px;
     }
+    
+    li:last-child{
+        font-weight: bold;
+    }
 }
 
 #home{
-    background-color: #222222;
+    background-color: var(--darker-background);
     padding-top: 60px;
     display: flex;
     justify-content: space-between;
@@ -49,7 +60,7 @@ nav{
         background-size: cover;
     }
     
-       #homeText{
+    #homeText{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -59,7 +70,7 @@ nav{
     }
 
     h1{
-        color: #FFFFFF;
+        color: var(--secondary-color);
         font-size: 3.8rem;
     }
 
@@ -73,7 +84,7 @@ nav{
 }
 
 #sobre{
-    background-color: #FF9E44;
+    background-color: var(--highlight-color);
     display: flex;
     
 
@@ -84,6 +95,7 @@ nav{
         align-items: center;
         width: 60vw;
         padding-top: 60px;
+        text-align: justify;
         
 
         #sobreTextItem{
@@ -93,12 +105,12 @@ nav{
     }
 
     h1{
-        color: #FFFFFF;
+        color: var(--secondary-color);
         font-size: 3.8rem;
     }
 
     p{
-        color: #FFFFFF;
+        color: var(--secondary-color);
         font-size: 1.8rem;
         padding: 45px 0 56px 0;
         line-height: 2.3rem;
@@ -131,7 +143,7 @@ nav{
     }
     
     h1{
-        color: #222222;
+        color: var(--darker-background);
         font-size: 3.8rem;
         padding-bottom: 50px;
     }
@@ -148,7 +160,7 @@ nav{
         background-color: #00000039;
         border-radius: 8px;
         padding: 12px 17px;
-        color: #FFFFFF;
+        color: var(--secondary-color);
         font-size: 1.93rem;
     }
 }
@@ -163,17 +175,17 @@ nav{
     width: fit-content;
     padding: 8px 15px;
     border-radius: 13px;
-    color: #FFFFFF;
+    color: var(--secondary-color);
     cursor: pointer;
     a{
         padding-left: 10px;
         text-decoration: none;
-        color: #FFFFFF;
+        color: var(--secondary-color);
     }
 }
 
 .downloadButton{
-    background-color: #FF9E44;
+    background-color: var(--highlight-color);
 }
 
 .linkedinButton{
@@ -185,23 +197,24 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     gap: 20px;
-    padding-left: 500px;
+    text-align: center;
 
    #textoContato{
     h1{
-        color: #FFFFFF;
+        color: var(--secondary-color);
         font-size: 5rem;
         text-decoration: underline;
     }
     
     p{
-        color: #FFFFFF;
+        color: var(--secondary-color);
         font-size: 2.6rem;
         line-height: 2.3rem;
-        width: 30%;
         padding-top: 60px;
+        text-align: center;
+        width: 60vw;
     }
    }
 }
@@ -212,7 +225,7 @@ nav{
     align-items: center;
     padding-top: 20px;
     p{
-        color: #FFFFFF;
+        color: var(--secondary-color);
         font-size: 1.7rem;
     }
 
@@ -227,7 +240,7 @@ nav{
     align-items: center;
     padding-top: 20px;
     p{
-        color: #FFFFFF;
+        color: var(--secondary-color);
         font-size: 1.7rem;
     }
 
@@ -248,7 +261,7 @@ nav{
 }
 
 #projetos{
-    background-color: #222222;
+    background-color: var(--darker-background);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,7 +273,7 @@ nav{
     flex-direction: column;
     width: 400px;
     height: 350px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid var(--secondary-color);
     border-radius: 40px;
     padding-left: 20px;
     padding-top: 20px;
@@ -272,7 +285,7 @@ nav{
     }
 
     p{
-        color: #FFFFFF;
+        color: var(--secondary-color);
         font-size: 28px;
         padding-top: 20px;
         height: 200px;
@@ -293,17 +306,146 @@ nav{
 }
 
 #titulo{
-    color: #FFFFFF;
+    color: var(--secondary-color);
     font-size: 3.8rem;
     padding: 100px 0 0 136px;
     height: 100px;
 }
 
 .gitbutton{
-    background-color: #FF9E44;
+    background-color: var(--highlight-color);
     border-radius: 15px;
 
     img{
         width: 32px;
+    }
+}
+
+@media (orientation: portrait){
+    #home{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        #fotoHome{
+            height: 30vh;
+            width: 30vh;
+            border-radius: 50%;
+            margin-bottom: 3.5rem;
+        }
+
+        h1{
+            font-size: 2.6rem;
+            text-align: center;
+        }
+
+        h2{
+            font-size: 1.7rem;
+            text-align: center;
+            
+        }
+
+        #homeContent{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    #fotoSobre{
+        display: none;
+    }
+
+    #sobre{
+        #sobreTextContainer{
+            width: 100vw;
+
+            #sobreTextItem{
+                align-items: center;
+            }
+        }
+    }
+
+    #skills{
+        ul{
+            max-width: 300px;
+        }
+
+        li{
+            text-align: center;
+        }
+    }
+
+    #contato{
+        #textoContato{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            p{
+                width: 80vw;
+            }
+        }
+
+    }
+
+    #email{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding-top: 20px;
+        p{
+            color: var(--secondary-color);
+            font-size: 1.3rem;
+        }
+    
+        img{
+            width: 24px;
+        }
+    }
+    
+    #telefone{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        p{
+            color: var(--secondary-color);
+            font-size: 1.3rem;
+        }
+    
+        img{
+            width: 24px;
+        }
+    }
+    
+    #botoes{
+        display: flex;
+        padding-top: 40px;
+        gap: 20px;
+        
+        img{
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    #titulo{
+        display: flex;
+        justify-content: center;
+        padding: 0 0 0 0;
+    }
+
+    #projetosContainer{
+        padding: 100px 0px 20px 15px;
+    }
+}
+
+
+@media (max-width: 500px){
+    nav{
+        display: none;
     }
 }
